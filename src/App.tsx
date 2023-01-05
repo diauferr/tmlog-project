@@ -18,6 +18,4 @@ function App() {
 
 export default App;
 
-const Container = styled.div`
-  background-color: red;
-`;
+const Container = styled.div``;
