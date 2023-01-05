@@ -21,7 +21,7 @@ import PoppinsThinItalic from "../src/fonts/Poppins-ThinItalic.ttf";
 
 export const GlobalStyle = createGlobalStyle`
 
-		@font-face {
+	@font-face {
 		font-family: 'Poppins Thin';
 		src: local('Poppins Thin'), local('PoppinsThin'),
 		url(${PoppinsThin}) format('truetype');
@@ -158,7 +158,9 @@ export const GlobalStyle = createGlobalStyle`
   	body {
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 		font-family: Open-Sans, Helvetica, Sans-Serif;
+		background-color: #5065D3;
   	}
 `;
 
