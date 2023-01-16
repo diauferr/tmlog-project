@@ -21,7 +21,7 @@ export const Quote = () => {
 
     const onReset = () => {};
 
-    const [state, handleSubmit] = useForm("mjvjwqaq");
+    const [state, handleSubmit] = useForm("xeqvkrav");
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -176,7 +176,7 @@ export const Quote = () => {
                     </Form.Item>
                 </Form>
                 <Modal
-                    title="Quote sent!"
+                    title={t("Quote sent!")}
                     open={isModalOpen}
                     onCancel={handleCancel}
                     onOk={handleOk}
