@@ -1,19 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import react from "react";
 
-import { GlobalStyle } from "./global";
+import { Router } from "./router";
 
-import { Services } from "./pages/Services";
+import styled, { ThemeProvider } from "styled-components";
 
-import styled from "styled-components";
+import { GlobalStyle, theme } from "./global";
 
 function App() {
-  return (
-    <Container className="App">
-      <GlobalStyle />
-      <Services />
-    </Container>
-  );
+    return (
+        <Container className="App">
+            <GlobalStyle />
+            <ThemeProvider theme={theme} />
+            <Router />
+        </Container>
+    );
 }
 
 export default App;
