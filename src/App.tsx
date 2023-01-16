@@ -6,6 +6,8 @@ import styled, { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, theme } from "./global";
 
+import "./i18n";
+
 function App() {
     return (
         <Container className="App">

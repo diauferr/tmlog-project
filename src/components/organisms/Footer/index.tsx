@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import * as S from "./styles";
 
@@ -8,31 +9,33 @@ import IconLinked from "../../../assets/icon-linkedin.png";
 import IconTwitter from "../../../assets/icon-twitter.png";
 
 export const Footer = () => {
+    const { t } = useTranslation();
     return (
         <S.Container>
             <img className="logo" src={Logo}></img>
             <div className="links">
-                <h4>Useful links</h4>
+                <h4>{t("Useful links")}</h4>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#">{t("Home")}</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">{t("Services")}</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">{t("About")}</a>
                     </li>
                     <li>
-                        <a href="#">Quote</a>
+                        <a href="#">{t("Quote")}</a>
                     </li>
                 </ul>
             </div>
             <div className="touch">
-                <h4>Get in touch</h4>
+                <h4>{t("Get in touch")}</h4>
                 <p>
-                    Giovanni Battista Pirelli, 271 - SL 207 - Vila Homero Thon,
-                    Santo André - SP, 09111-340
+                    {t(
+                        "Giovanni Battista Pirelli, 271 - SL 207 - Vila Homero Thon, Santo André - SP, 09111-340"
+                    )}
                 </p>
                 <p>
                     Tel:
@@ -41,7 +44,7 @@ export const Footer = () => {
                 <a href="mailto:contato@tmlog.com.br">contato@tmlog.com.br</a>
             </div>
             <div className="social">
-                <h4>Social media</h4>
+                <h4>{t("Social media")}</h4>
                 <S.SocialIcons>
                     <a
                         href="https://www.linkedin.com/company/tmloglogistics/"

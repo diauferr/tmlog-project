@@ -22,6 +22,6 @@ export const Container = styled.div`
 
     @media (min-width: 1280px) {
         background-image: url(${coverHero});
-        height: 630px;
+        height: 660px;
     }
 `;

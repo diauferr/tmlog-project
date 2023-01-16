@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 import { LeftArrow, RightArrow } from "./arrows";
@@ -15,29 +17,6 @@ import IconTruck from "../../../assets/icon-truck.jpg";
 import IconBusiness from "../../../assets/icon-business.jpg";
 import IconPeople from "../../../assets/icon-people.jpg";
 
-const data = [
-    {
-        icon: IconDeal,
-        title: "320",
-        desc: "Projects done"
-    },
-    {
-        icon: IconTruck,
-        title: "153",
-        desc: "Owned partners"
-    },
-    {
-        icon: IconBusiness,
-        title: "72",
-        desc: "Clients Worldwide"
-    },
-    {
-        icon: IconPeople,
-        title: "114",
-        desc: "People in team"
-    }
-];
-
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 // NOTE: embrace power of CSS flexbox!
@@ -52,6 +31,8 @@ const getItems = () =>
 
 export const About = () => {
     const [items] = useState(getItems);
+
+    const { t } = useTranslation();
 
     // NOTE: for drag by mouse
     const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -71,23 +52,43 @@ export const About = () => {
         }
         setSelected(selected !== itemId ? itemId : "");
     };
+
+    const data = [
+        {
+            icon: IconDeal,
+            title: "320",
+            desc: `${t("Projects done")}`
+        },
+        {
+            icon: IconTruck,
+            title: "153",
+            desc: `${t("Owned partners")}`
+        },
+        {
+            icon: IconBusiness,
+            title: "72",
+            desc: `${t("Clients worldwide")}`
+        },
+        {
+            icon: IconPeople,
+            title: "114",
+            desc: `${t("People in team")}`
+        }
+    ];
+
     return (
         <S.Container>
             <S.Wrapper>
-                <h1>About TMLOG</h1>
+                <h1>{t("About TMLOG")}</h1>
                 <p>
-                    With operations starting in 2020 under the management of an
-                    experienced team with agency expertise, we offer our clients
-                    excellence in every project, delivering viability, security,
-                    and technology. The relationship and connection between team
-                    and client is our priority, occurring in a humanized and
-                    personalized way.
+                    {t(
+                        "With operations starting in 2020 under the management of an experienced team with agency expertise, we offer our clients excellence in every project, delivering viability, security, and technology. The relationship and connection between team and client is our priority, occurring in a humanized and personalized way."
+                    )}
                 </p>
                 <p>
-                    We manage all the shipments in a coordinated and efficient
-                    way, from end to end, guaranteeing that the projects we are
-                    implementing had an agile and effective process, assuring
-                    help and support every step.
+                    {t(
+                        "We manage all the shipments in a coordinated and efficient way, from end to end, guaranteeing that the projects we are implementing had an agile and effective process, assuring help and support every step."
+                    )}
                 </p>
             </S.Wrapper>
             <ScrollMenu

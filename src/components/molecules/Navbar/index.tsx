@@ -1,36 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Select } from "antd";
 
+import i18n from "../../../i18n";
+import { useTranslation } from "react-i18next";
+
 import * as S from "./styles";
 
 import Logo from "../../../assets/logo-full-blue.svg";
 
-const data = [
-    {
-        key: 0,
-        title: "Home"
-    },
-    {
-        key: 1,
-        title: "Services"
-    },
-    {
-        key: 2,
-        title: "About"
-    },
-    {
-        key: 3,
-        title: "Quote"
-    }
-];
-
 const options = [
     {
-        value: "en",
+        value: "en-US",
         label: "English"
     },
     {
-        value: "pt",
+        value: "pt-BR",
         label: "Português"
     },
     {
@@ -40,12 +24,32 @@ const options = [
 ];
 
 export const Navbar = () => {
-    const [value, setValue] = useState("English");
+    const { t } = useTranslation();
+    const [value, setValue] = useState(`${navigator.language}`);
 
-    const handleChange = (value: string) => {
-        console.log(`selected ${value}`);
-        setValue(`${value}`);
-    };
+    function handleChangeLanguage(language: string) {
+        // Trocando o idioma na chamada da função
+        i18n.changeLanguage(language);
+    }
+
+    const data = [
+        {
+            key: 0,
+            title: `${t("Home")}`
+        },
+        {
+            key: 1,
+            title: `${t("Services")}`
+        },
+        {
+            key: 2,
+            title: `${t("About")}`
+        },
+        {
+            key: 3,
+            title: `${t("Quote")}`
+        }
+    ];
 
     const [windowSize, setWindowSize] = useState(getWindowSize());
 
@@ -63,9 +67,9 @@ export const Navbar = () => {
 
     return (
         <S.Container>
-            <span>
+            {/* <span>
                 W: {windowSize.innerWidth} x H: {windowSize.innerHeight}
-            </span>
+            </span> */}
             <S.Navbar>
                 <S.WrapperLeft>
                     <S.Logo src={Logo} />
@@ -74,7 +78,7 @@ export const Navbar = () => {
                         style={{
                             width: 110
                         }}
-                        onChange={handleChange}
+                        onChange={handleChangeLanguage}
                         options={options}
                     />
                 </S.WrapperLeft>

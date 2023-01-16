@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    max-width: 330px;
+    max-width: 360px;
 
     h1 {
         font-family: "Poppins Bold";

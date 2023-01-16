@@ -10,12 +10,17 @@
         "pretty": "prettier --write \"./**/*.{ts,tsx,json}\""
     },
     "dependencies": {
+        "@formspree/react": "^2.4.1",
+        "@types/canvas-confetti": "^1.6.0",
         "@types/styled-components": "^5.1.26",
         "antd": "^5.1.4",
+        "canvas-confetti": "^1.6.0",
         "eslint": "^8.31.0",
+        "i18next": "^22.4.9",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-horizontal-scrolling-menu": "^3.2.3",
+        "react-i18next": "^12.1.4",
         "react-router-dom": "^6.6.2",
         "styled-components": "^5.3.6"
     },
