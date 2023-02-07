@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 
     h1 {
         font-family: "Poppins Bold";
-        font-size: 48px;
+        font-size: 44px;
         color: #333333;
     }
 
@@ -37,6 +37,6 @@ export const Wrapper = styled.div`
     }
 
     @media (min-width: 1024px) {
-        max-width: 400px;
+        max-width: 660px;
     }
 `;

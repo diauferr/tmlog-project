@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
-    margin: 0 0 64px 24px;
+    margin: 0 0 0 24px;
 
     @media (min-width: 768px) {
         background-image: url(${CoverServices});
@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     @media (min-width: 1280px) {
         padding-left: 130px;
-        height: 520px;
+        height: 720px;
     }
 
     .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
@@ -36,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    max-width: 400px;
+    max-width: 660px;
     h1 {
         font-family: "Poppins Bold";
         font-size: 36px;
@@ -47,6 +47,7 @@ export const Wrapper = styled.div`
         font-family: "Poppins Regular";
         font-size: 16px;
         color: #333333;
+        margin-bottom: 54px;
     }
 
     .btn {
@@ -64,6 +65,6 @@ export const Wrapper = styled.div`
     }
 
     @media (min-width: 1280px) {
-        max-width: 420px;
+        max-width: 660px;
     }
 `;

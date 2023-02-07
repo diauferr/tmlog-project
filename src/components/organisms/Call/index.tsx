@@ -10,10 +10,12 @@ export const Call = () => {
     const { t } = useTranslation();
     return (
         <S.Container>
-            <h1>{t("Reach your destination 100% sure and safe")}</h1>
+            <h1>
+                {t("Join Forces with TMLOG for Efficient Logistics Solutions")}
+            </h1>
             <p>
                 {t(
-                    "We work with the right partners around the world and our goal is to always maintain long-lasting strategic relationships, providing opportunities to offer a global solution with confidence and security in all our projects. We have partnerships agents to better meet your demands."
+                    "Looking for a partner to streamline your international logistics operations? TMLOG offers a full suite of services including air freight, sea freight, road freight, and cargo insurance. Our team of experts will work with you to create a customized solution to meet your unique needs and goals. Contact us today to experience seamless logistics solutions with TMLOG."
                 )}
             </p>
             <Button size="large" className="btn">

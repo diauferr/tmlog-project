@@ -59,7 +59,7 @@ export const Services = () => {
             icon: IconPlane,
             title: `${t("Air freight")}`,
             desc: `${t(
-                "Our AIRFAST services have been designed for customers who need their goods delivered urgently."
+                "Accelerate your global business with our efficient air freight services. Reliable, fast and expertly managed, our air freight solutions connect you to the world. Contact us today to learn how we can take your business to new heights."
             )}`,
             link: `${t("Read more")}`
         },
@@ -67,7 +67,7 @@ export const Services = () => {
             icon: IconShip,
             title: `${t("Sea freight")}`,
             desc: `${t(
-                "Sea-Air cargo is the last to be loaded and the first to be unloaded, reducing transshipment times and risk."
+                "Streamline your global supply chain with our efficient sea freight services. Reliable, cost-effective and expertly managed, our sea freight solutions connect you to the world. Contact us today to learn how we can support your business growth."
             )}`,
             link: `${t("Read more")}`
         },
@@ -75,7 +75,7 @@ export const Services = () => {
             icon: IconTruck,
             title: `${t("Road Freight")}`,
             desc: `${t(
-                "Safety assured for your business, this means that our trucks transport have the best delivery time."
+                "Smoothly transport goods over land with our efficient road freight services. Flexible, reliable and expertly managed, our road freight solutions connect you to the world. Contact us today to learn how we can support your business success."
             )}`,
             link: `${t("Read more")}`
         },
@@ -83,7 +83,7 @@ export const Services = () => {
             icon: IconTask,
             title: `${t("Chain Solutions")}`,
             desc: `${t(
-                "Experienced professionals trained to manage, transport, store, and ship your cargo efficiently."
+                "Optimize your global supply chain with our expert supply chain solutions. Customized, comprehensive and efficient, our services provide end-to-end support for your business. Contact us today to learn how we can transform your operations and drive success."
             )}`,
             link: `${t("Read more")}`
         },
@@ -109,7 +109,7 @@ export const Services = () => {
             icon: IconAnchor,
             title: `${t("Cargo insurance")}`,
             desc: `${t(
-                "Full assistence for all the process of choosing the best shipping insurance for your business."
+                "Shield your shipments from unexpected events with our reliable cargo insurance services. Our insurance options offer peace of mind and protection for your valuable goods during transit. Trust in secure and confident international shipping with our cargo insurance."
             )}`,
             link: `${t("Read more")}`
         }
@@ -121,14 +121,13 @@ export const Services = () => {
                 <h1>{t("Our Services")}</h1>
                 <p>
                     {t(
-                        "Globally known for our ability to handle every last detail of our customers particular logistics and forwarding needs, TMLOG's team takes care of all your logistics."
+                        "Streamline Your Global Supply Chain with Our International Logistics Solutions. Experience seamless, reliable, and cost-effective shipping to anywhere in the world. Our team of experts ensures your goods reach their destination on time and in pristine condition. Contact us now to learn how we can help grow your business."
                     )}
                 </p>
             </S.Wrapper>
             <ScrollMenu
                 LeftArrow={LeftArrow}
                 RightArrow={RightArrow}
-                onWheel={onWheel}
                 onMouseDown={() => dragStart}
                 onMouseUp={() => dragStop}
                 onMouseMove={handleDrag}

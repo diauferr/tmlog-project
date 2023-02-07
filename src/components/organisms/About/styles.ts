@@ -22,7 +22,14 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     margin: 24px;
+
+    div {
+        margin-right: 30px;
+    }
 
     h1 {
         font-family: "Poppins Bold";
@@ -37,6 +44,6 @@ export const Wrapper = styled.div`
     }
 
     @media (min-width: 768px) {
-        max-width: 560px;
+        max-width: 1224px;
     }
 `;

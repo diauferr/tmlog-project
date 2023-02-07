@@ -44,8 +44,8 @@ export function Card({
                 cursor: "pointer",
                 display: "inline-block",
                 margin: "0 16px",
-                width: "220px",
-                minHeight: "330px",
+                width: "240px",
+                minHeight: "390px",
                 userSelect: "none",
                 borderRadius: "10px",
                 padding: "31px",
@@ -72,19 +72,6 @@ export function Card({
             <CardDesc>{desc}</CardDesc>
             <CardLink>{link}</CardLink>
             {/* Container with measurements to use as example */}
-            {/* <div>
-        <div>{title}</div>
-        <div style={{ backgroundColor: visible ? "transparent" : "gray" }}>
-          visible: {JSON.stringify(visible)}
-        </div>
-        <div>selected: {JSON.stringify(!!selected)}</div>
-      </div>
-      <div
-        style={{
-          backgroundColor: selected ? "green" : "bisque",
-          height: "200px",
-        }}
-      /> */}
         </Container>
     );
 }

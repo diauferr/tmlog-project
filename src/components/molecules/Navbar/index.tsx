@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import * as S from "./styles";
 
-import Logo from "../../../assets/logo-full-blue.svg";
+import Logo from "../../../assets/logo-tmlog.svg";
 
 const options = [
     {

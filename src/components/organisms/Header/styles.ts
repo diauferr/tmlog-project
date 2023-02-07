@@ -8,7 +8,7 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
-    margin: 0 0 64px 0;
+    margin: 0 0 60px 0;
 
     @media (min-width: 768px) {
         background-image: url(${coverHeroOpacity});

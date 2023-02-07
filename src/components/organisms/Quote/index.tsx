@@ -43,7 +43,7 @@ export const Quote = () => {
     return (
         <S.Container>
             <div>
-                <h1>{t("Request a Free Quote")}</h1>
+                <h1>{t("Request a Quote")}</h1>
                 <p>{t("Fill out the form and receive a custom quotation:")}</p>
             </div>
             <S.Wrapper>

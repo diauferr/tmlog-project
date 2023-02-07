@@ -13,12 +13,12 @@ export const Hero = () => {
         <S.Container>
             <S.Wrapper>
                 <h1>
-                    {t("Reliability and agility")} <br />
-                    {t("in international logistics")}
+                    {t("Connecting businesses globally with efficient")} <br />
+                    {t("and reliable international logistics solutions.")}
                 </h1>
                 <p>
                     {t(
-                        "optimal shipping options, minimized delays, competitive rates, and personalized service for each demand."
+                        "Expanding business horizons with comprehensive international import and export logistics solutions."
                     )}
                 </p>
                 <Button size="large" className="btn">
